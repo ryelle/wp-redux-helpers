@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Robin Hawkins",
+    "url": "",
+    "description": "",
+    "link": "https://wpapi.local/author/robin/",
+    "slug": "robin",
+    "avatar_urls": {},
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://wpapi.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://wpapi.local/wp-json/wp/v2/users"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ava Chapman",
+    "url": "",
+    "description": "",
+    "link": "https://wpapi.local/author/ava/",
+    "slug": "ava",
+    "avatar_urls": {},
+    "meta": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://wpapi.local/wp-json/wp/v2/users/2"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://wpapi.local/wp-json/wp/v2/users"
+        }
+      ]
+    }
+  }
+]
