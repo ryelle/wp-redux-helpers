@@ -9,7 +9,6 @@
 		}],
 	],
 	"plugins": [
-		"lodash",
 		"transform-object-rest-spread",
 		[ "module-alias", [
 			{ "src": "./packages/wordpress-query-comments", "expose": "wordpress-query-comments" },
