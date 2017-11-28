@@ -1,6 +1,6 @@
 {
   "name": "wordpress-query-posts",
-  "version": "2.0.0-1",
+  "version": "2.0.0-alpha",
   "description": "A component for fetching WordPress post data from the REST API.",
   "repository": {
     "type": "git",
