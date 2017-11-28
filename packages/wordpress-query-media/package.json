@@ -1,6 +1,6 @@
 {
   "name": "wordpress-query-media",
-  "version": "2.0.0-alpha",
+  "version": "2.0.0-beta",
   "description": "A component for fetching WordPress media data from the REST API.",
   "repository": {
     "type": "git",
