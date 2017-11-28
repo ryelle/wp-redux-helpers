@@ -19,7 +19,7 @@ const state = deepFreeze( {
 		requests: {
 			'category_corner-case': false,
 			'post_tag_post-formats': false,
-			'category_photos': true,
+			category_photos: true,
 		},
 		slugs: {
 			category: {
@@ -28,8 +28,8 @@ const state = deepFreeze( {
 			post_tag: {
 				'post-formats': 30,
 			},
-		}
-	}
+		},
+	},
 } );
 
 describe( 'Term selectors', function() {

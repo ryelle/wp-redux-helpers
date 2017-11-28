@@ -16,7 +16,7 @@ import {
 	// reducers
 	items,
 	requests,
-	slugs
+	slugs,
 } from '../src/state';
 
 import terms from './fixtures/terms';
@@ -106,7 +106,7 @@ describe( 'Term reducer', () => {
 			};
 			const newState = slugs( undefined, action );
 			expect( newState ).to.eql( {
-				category: { photos: 1 }
+				category: { photos: 1 },
 			} );
 		} );
 
@@ -119,13 +119,13 @@ describe( 'Term reducer', () => {
 			};
 			const newState = slugs( undefined, action );
 			expect( newState ).to.eql( {
-				post_tag: { fun: 5 }
+				post_tag: { fun: 5 },
 			} );
 		} );
 
 		it( 'should track the slug->id relationship of new tags, when categories are already tracked', () => {
 			const originalState = deepFreeze( {
-				category: { photos: 1 }
+				category: { photos: 1 },
 			} );
 			const action = {
 				type: TERM_REQUEST_SUCCESS,
@@ -136,13 +136,13 @@ describe( 'Term reducer', () => {
 			const newState = slugs( originalState, action );
 			expect( newState ).to.eql( {
 				category: { photos: 1 },
-				post_tag: { fun: 5 }
+				post_tag: { fun: 5 },
 			} );
 		} );
 
 		it( 'should track the slug->id relationship of new tags, when other tags are already tracked', () => {
 			const originalState = deepFreeze( {
-				post_tag: { love: 6 }
+				post_tag: { love: 6 },
 			} );
 			const action = {
 				type: TERM_REQUEST_SUCCESS,
@@ -154,8 +154,8 @@ describe( 'Term reducer', () => {
 			expect( newState ).to.eql( {
 				post_tag: {
 					love: 6,
-					fun: 5
-				}
+					fun: 5,
+				},
 			} );
 		} );
 	} );

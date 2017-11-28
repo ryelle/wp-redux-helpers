@@ -25,8 +25,8 @@ const state = deepFreeze( {
 		names: {
 			robin: 1,
 			ava: 2,
-		}
-	}
+		},
+	},
 } );
 
 describe( 'User selectors', function() {

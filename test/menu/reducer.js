@@ -14,7 +14,7 @@ import {
 	MENU_REQUEST_SUCCESS,
 	// reducers
 	items,
-	requests
+	requests,
 } from '../src/state';
 
 import primary from './fixtures/primary';
@@ -31,8 +31,8 @@ describe( 'Menu reducer', () => {
 			const action = {
 				type: MENU_REQUEST_SUCCESS,
 				location: 'primary',
-				menu: primary
-			}
+				menu: primary,
+			};
 			const newState = items( undefined, action );
 			expect( newState ).to.eql( { primary } );
 		} );
@@ -42,8 +42,8 @@ describe( 'Menu reducer', () => {
 			const action = {
 				type: MENU_REQUEST_SUCCESS,
 				location: 'footer',
-				menu: footer
-			}
+				menu: footer,
+			};
 			const newState = items( originalState, action );
 			expect( newState ).to.eql( { primary, footer } );
 		} );

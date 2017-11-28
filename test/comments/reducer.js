@@ -21,7 +21,7 @@ import {
 	itemsOnPost,
 	requests,
 	totals,
-	isSubmitting
+	isSubmitting,
 } from '../src/state';
 
 import commentsOn1 from './fixtures/forPost1';
@@ -139,7 +139,7 @@ describe( 'Comment reducer', () => {
 			const newState = totals( originalState, action );
 			expect( newState ).to.eql( {
 				1: 3,
-				149: 10
+				149: 10,
 			} );
 		} );
 
@@ -152,7 +152,7 @@ describe( 'Comment reducer', () => {
 			const newState = totals( originalState, action );
 			expect( newState ).to.eql( {
 				1: 3,
-				2: 1
+				2: 1,
 			} );
 		} );
 	} );
@@ -186,7 +186,7 @@ describe( 'Comment reducer', () => {
 			const originalState = deepFreeze( { 1: true } );
 			const action = {
 				type: COMMENT_SUBMIT_REQUEST_FAILURE,
-				postId: 1
+				postId: 1,
 			};
 			const newState = isSubmitting( originalState, action );
 			expect( newState ).to.eql( { 1: false } );

@@ -37,15 +37,15 @@ const state = deepFreeze( {
 			'{"paged":2}': [
 				4,
 				3,
-			]
+			],
 		},
 		slugs: {
 			'wordpress-query-component-tests': 6,
 			'local-development-requires-testing': 5,
 			'api-tests': 4,
 			'private-post-example': 3,
-		}
-	}
+		},
+	},
 } );
 
 describe( 'Post selectors', function() {
@@ -129,7 +129,7 @@ describe( 'Post selectors', function() {
 		it( 'Should get a list of post objects if the response is in our state', function() {
 			const postList = [
 				postsById[ 6 ],
-				postsById[ 5 ]
+				postsById[ 5 ],
 			];
 			expect( selectors.getPostsForQuery( state, { paged: 1 } ) ).to.eql( postList );
 		} );

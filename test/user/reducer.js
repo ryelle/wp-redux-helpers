@@ -15,7 +15,7 @@ import {
 	// reducers
 	items,
 	requests,
-	names
+	names,
 } from '../src/state';
 
 import users from './fixtures/users';
@@ -49,7 +49,7 @@ describe( 'User reducer', () => {
 		it( 'should track the requesting state of a new user', () => {
 			const action = {
 				type: USER_REQUEST,
-				userId: 'robin'
+				userId: 'robin',
 			};
 			const newState = requests( undefined, action );
 			expect( newState ).to.eql( { robin: true } );
@@ -59,7 +59,7 @@ describe( 'User reducer', () => {
 			const originalState = deepFreeze( { robin: true } );
 			const action = {
 				type: USER_REQUEST_SUCCESS,
-				userId: 'robin'
+				userId: 'robin',
 			};
 			const newState = requests( originalState, action );
 			expect( newState ).to.eql( { robin: false } );
@@ -69,7 +69,7 @@ describe( 'User reducer', () => {
 			const originalState = deepFreeze( { robin: true } );
 			const action = {
 				type: USER_REQUEST_FAILURE,
-				userId: 'robin'
+				userId: 'robin',
 			};
 			const newState = requests( originalState, action );
 			expect( newState ).to.eql( { robin: false } );
@@ -79,7 +79,7 @@ describe( 'User reducer', () => {
 			const originalState = deepFreeze( { robin: false } );
 			const action = {
 				type: USER_REQUEST,
-				userId: 2
+				userId: 2,
 			};
 			const newState = requests( originalState, action );
 			expect( newState ).to.eql( { ...originalState, 2: true } );
@@ -96,7 +96,7 @@ describe( 'User reducer', () => {
 			const action = {
 				type: USER_REQUEST_SUCCESS,
 				userId: 'robin',
-				user: users[ 0 ]
+				user: users[ 0 ],
 			};
 			const newState = names( undefined, action );
 			expect( newState ).to.eql( { robin: 1 } );
@@ -107,7 +107,7 @@ describe( 'User reducer', () => {
 			const action = {
 				type: USER_REQUEST_SUCCESS,
 				userId: 2,
-				user: users[ 1 ]
+				user: users[ 1 ],
 			};
 			const newState = names( originalState, action );
 			expect( newState ).to.eql( { robin: 1, ava: 2 } );

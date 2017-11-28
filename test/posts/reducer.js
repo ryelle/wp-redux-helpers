@@ -23,7 +23,7 @@ import {
 	totalPages,
 	queryRequests,
 	queries,
-	slugs
+	slugs,
 } from '../src/state';
 
 import posts from './fixtures/posts';
@@ -119,7 +119,7 @@ describe( 'Post reducer', () => {
 			const action = {
 				type: POSTS_REQUEST_SUCCESS,
 				query: { paged: 1 },
-				posts
+				posts,
 			};
 			const newState = queries( undefined, action );
 			expect( newState ).to.eql( { '{"paged":1}': [ 6, 5, 4, 3 ] } );
@@ -130,12 +130,12 @@ describe( 'Post reducer', () => {
 			const action = {
 				type: POSTS_REQUEST_SUCCESS,
 				query: { paged: 2 },
-				posts: [ post ]
+				posts: [ post ],
 			};
 			const newState = queries( originalState, action );
 			expect( newState ).to.eql( {
 				'{"paged":1}': [ 6, 5, 4, 3 ],
-				'{"paged":2}': [ 7 ]
+				'{"paged":2}': [ 7 ],
 			} );
 		} );
 	} );
@@ -166,7 +166,7 @@ describe( 'Post reducer', () => {
 			const newState = slugs( originalState, action );
 			expect( newState ).to.eql( {
 				'wordpress-query-component-tests': 6,
-				'a-single-post': 7
+				'a-single-post': 7,
 			} );
 		} );
 	} );
@@ -181,7 +181,7 @@ describe( 'Post reducer', () => {
 			const action = {
 				type: POSTS_REQUEST_SUCCESS,
 				query: { paged: 1 },
-				totalPages: 3
+				totalPages: 3,
 			};
 			const newState = totalPages( undefined, action );
 			expect( newState ).to.eql( { '{"paged":1}': 3 } );
@@ -192,12 +192,12 @@ describe( 'Post reducer', () => {
 			const action = {
 				type: POSTS_REQUEST_SUCCESS,
 				query: { category: 51 },
-				totalPages: 4
+				totalPages: 4,
 			};
 			const newState = totalPages( originalState, action );
 			expect( newState ).to.eql( {
 				'{"paged":1}': 3,
-				'{"category":51}': 4
+				'{"category":51}': 4,
 			} );
 		} );
 	} );

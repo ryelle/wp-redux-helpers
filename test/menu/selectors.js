@@ -13,13 +13,13 @@ import primary from './fixtures/primary';
 const state = deepFreeze( {
 	menu: {
 		items: {
-			primary
+			primary,
 		},
 		requests: {
 			primary: false,
 			footer: true,
-		}
-	}
+		},
+	},
 } );
 
 describe( 'Menu selectors', function() {

@@ -29,8 +29,8 @@ const state = deepFreeze( {
 		isSubmitting: {
 			1: false,
 			3: true,
-		}
-	}
+		},
+	},
 } );
 
 describe( 'Comment selectors', function() {

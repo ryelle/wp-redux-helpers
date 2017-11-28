@@ -23,8 +23,8 @@ const state = deepFreeze( {
 		},
 		paths: {
 			'/about': 1086,
-		}
-	}
+		},
+	},
 } );
 
 describe( 'Post selectors', function() {

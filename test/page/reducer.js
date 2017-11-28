@@ -16,7 +16,7 @@ import {
 	// reducers
 	items,
 	requests,
-	paths
+	paths,
 } from '../src/state';
 
 import pageSample from './fixtures/2';
@@ -98,7 +98,7 @@ describe( 'Post reducer', () => {
 			const newState = paths( originalState, action );
 			expect( newState ).to.eql( {
 				'/about': 1086,
-				'/sample-page': 2
+				'/sample-page': 2,
 			} );
 		} );
 	} );
