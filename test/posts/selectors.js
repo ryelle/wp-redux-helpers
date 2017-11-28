@@ -8,7 +8,7 @@ import { keyBy } from 'lodash';
 /**
  * Internal dependencies
  */
-import * as selectors from '../src/selectors';
+import * as selectors from 'wordpress-query-posts/src/selectors';
 import posts from './fixtures/posts';
 
 const postsById = keyBy( posts, 'id' );

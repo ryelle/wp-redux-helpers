@@ -8,7 +8,7 @@ import { keyBy } from 'lodash';
 /**
  * Internal dependencies
  */
-import * as selectors from '../src/selectors';
+import * as selectors from 'wordpress-query-comments/src/selectors';
 import commentsOn1 from './fixtures/forPost1';
 
 const commentsById = keyBy( commentsOn1, 'id' );

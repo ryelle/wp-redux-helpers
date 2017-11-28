@@ -8,7 +8,7 @@ import { keyBy } from 'lodash';
 /**
  * Internal dependencies
  */
-import * as selectors from '../src/selectors';
+import * as selectors from 'wordpress-query-page/src/selectors';
 import pageSample from './fixtures/2';
 import pageAbout from './fixtures/1086';
 

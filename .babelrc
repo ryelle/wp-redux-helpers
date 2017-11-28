@@ -10,6 +10,15 @@
 	],
 	"plugins": [
 		"lodash",
-		"transform-object-rest-spread"
+		"transform-object-rest-spread",
+		[ "module-alias", [
+			{ "src": "./packages/wordpress-query-comments", "expose": "wordpress-query-comments" },
+			{ "src": "./packages/wordpress-query-media", "expose": "wordpress-query-media" },
+			{ "src": "./packages/wordpress-query-menu", "expose": "wordpress-query-menu" },
+			{ "src": "./packages/wordpress-query-page", "expose": "wordpress-query-page" },
+			{ "src": "./packages/wordpress-query-posts", "expose": "wordpress-query-posts" },
+			{ "src": "./packages/wordpress-query-term", "expose": "wordpress-query-term" },
+			{ "src": "./packages/wordpress-query-user", "expose": "wordpress-query-user" },
+		] ]
 	]
 }

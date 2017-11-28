@@ -8,7 +8,7 @@ import { keyBy } from 'lodash';
 /**
  * Internal dependencies
  */
-import * as selectors from '../src/selectors';
+import * as selectors from 'wordpress-query-term/src/selectors';
 import terms from './fixtures/terms';
 
 const termsById = keyBy( terms, 'id' );

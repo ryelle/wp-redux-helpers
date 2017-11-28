@@ -17,7 +17,7 @@ import {
 	items,
 	requests,
 	slugs,
-} from '../src/state';
+} from 'wordpress-query-term/src/state';
 
 import terms from './fixtures/terms';
 

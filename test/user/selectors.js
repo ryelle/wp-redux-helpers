@@ -8,7 +8,7 @@ import { keyBy } from 'lodash';
 /**
  * Internal dependencies
  */
-import * as selectors from '../src/selectors';
+import * as selectors from 'wordpress-query-user/src/selectors';
 import users from './fixtures/users';
 
 const usersById = keyBy( users, 'id' );

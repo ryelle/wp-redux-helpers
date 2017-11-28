@@ -24,7 +24,7 @@ import {
 	queryRequests,
 	queries,
 	slugs,
-} from '../src/state';
+} from 'wordpress-query-posts/src/state';
 
 import posts from './fixtures/posts';
 import post from './fixtures/single';

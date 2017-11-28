@@ -7,7 +7,7 @@ import deepFreeze from 'deep-freeze';
 /**
  * Internal dependencies
  */
-import * as selectors from '../src/selectors';
+import * as selectors from 'wordpress-query-menu/src/selectors';
 import primary from './fixtures/primary';
 
 const state = deepFreeze( {

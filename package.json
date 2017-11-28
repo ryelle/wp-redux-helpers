@@ -1,5 +1,38 @@
 {
+	"name": "wp-redux-helpers",
+	"private": true,
+	"dependencies": {
+		"debug": "^3.1.0",
+		"lodash": "^4.17.2",
+		"qs": "^6.3.0",
+		"react": "^16.1.1",
+		"react-redux": "^5.0.6",
+		"redux": "^3.6.0",
+		"shallowequal": "^1.0.2",
+		"wordpress-rest-api-oauth-1": "^1.0.8"
+	},
 	"devDependencies": {
-		"lerna": "^2.5.1"
+		"babel-core": "^6.17.0",
+		"babel-eslint": "^8.0.2",
+		"babel-plugin-lodash": "^3.2.9",
+		"babel-plugin-module-alias": "^1.6.0",
+		"babel-plugin-transform-object-rest-spread": "^6.26.0",
+		"babel-polyfill": "^6.16.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-register": "^6.18.0",
+		"chai": "^4.1.2",
+		"deep-freeze": "0.0.1",
+		"eslint": "^4.11.0",
+		"eslint-config-wpcalypso": "^1.2.0",
+		"eslint-plugin-wpcalypso": "^4.0.1",
+		"lerna": "^2.5.1",
+		"mocha": "^4.0.1",
+		"sinon": "^4.1.2"
+	},
+	"scripts": {
+		"lint": "eslint packages --ext=js,jsx",
+		"lint-tests": "eslint test --ext=js,jsx",
+		"pretest": "npm run lint",
+		"test": "mocha  --require ./mocha-setup test/**/*.js"
 	}
 }

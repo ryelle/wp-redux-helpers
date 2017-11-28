@@ -15,7 +15,7 @@ import {
 	// reducers
 	items,
 	requests,
-} from '../src/state';
+} from 'wordpress-query-menu/src/state';
 
 import primary from './fixtures/primary';
 import footer from './fixtures/footer';

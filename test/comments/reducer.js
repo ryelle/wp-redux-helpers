@@ -22,7 +22,7 @@ import {
 	requests,
 	totals,
 	isSubmitting,
-} from '../src/state';
+} from 'wordpress-query-comments/src/state';
 
 import commentsOn1 from './fixtures/forPost1';
 import commentsOn149 from './fixtures/forPost149';

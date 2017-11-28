@@ -17,7 +17,7 @@ import {
 	items,
 	requests,
 	paths,
-} from '../src/state';
+} from 'wordpress-query-page/src/state';
 
 import pageSample from './fixtures/2';
 import pageAbout from './fixtures/1086';

@@ -16,7 +16,7 @@ import {
 	items,
 	requests,
 	names,
-} from '../src/state';
+} from 'wordpress-query-user/src/state';
 
 import users from './fixtures/users';
 
